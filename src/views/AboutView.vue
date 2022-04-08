@@ -22,9 +22,7 @@ export default defineComponent({
     const renderer = ref(null);
     const box = ref(null);
 
-    renderer?.value?.onBeforeRender(() => {
-      box.value.mesh.rotation.x += 0.01;
-    });
+    
 
 
     return{renderer,box};
